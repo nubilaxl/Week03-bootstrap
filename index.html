@@ -23,8 +23,17 @@
     <!--The navbar uses an unordered list and link tag to implement menu items-->
     <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
         <a class="navbar-brand" href="index.html">LIFE</a>
-        
-        <div class="collapse navbar-collapse" id="thenavbar">
+        <!--A toggle button placed on the navbar that connects to the 
+             collapsible navbar div and creates the dropdown effect when
+             screen sizes are smaller-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
+            aria-expanded="false" aria-label="Toggle Navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <!--A list of class navbar with an active list item 
+                that is a link to the register web page.-->
             <ul class="navbar-nav">
                 <li class="nav-item active">
                     <a class="nav-link" href="register.html">Register</a>
@@ -34,7 +43,7 @@
         </div>
     </nav>
 
-    <!--This div places the image within the center cell of the grid-->
+    <!--This container places the image within the center column of the grid-->
     <div class="container text-center">
         <div class="row">
           <div class="col">
@@ -50,12 +59,16 @@
     </div>
 
 
-    <!--This div places the table in the only column on the row-->
+    <!--This div places the table on a row with one column
+        The text are aligned to the center in the table-->
     <div class="container text-center">
     <div class="row">
         <div class="col">
          
-            <!--The table is a responsive striped table with hover -->
+            <!--The table is a responsive striped table with hover effect.
+            The table expands and collapses when screen changes, and when
+            the user places the cursor over a row, the row has an active hover 
+            effect on it.-->
         <table class="table table-responsive  table-hover table-striped">
             <thead>
                 <tr>
