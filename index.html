@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Foods</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class = "container">
+    <!--Week 3 Bootstrap assignment
+        Create a new website using HTML and Bootstrap. 
+    The website must include the following:
+    At least 2 pages.
+    A Bootstrap navbar, table, and form.
+    Bootstrap grid used throughout to format elements
+    Elements should stack vertically when the window is small-->
+    <header>
+        <h1>Healthy Recipes</h1>
+    </header>
+
+
+    <!--Bootstrap navbar logic for the navigation with a branded button-->
+    <!--The navbar uses an unordered list and link tag to implement menu items-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html">LIFE</a>
+        
+        <div class="collapse navbar-collapse" id="thenavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="register.html">Register</a>
+                </li>
+                                
+            </ul>
+        </div>
+    </nav>
+
+    <!--This div places the image within the center cell of the grid-->
+    <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            
+          </div>
+          <div class="col">
+            <img src="images/food_guide.jpeg"  alt="A food chart">
+          </div>
+          <div class="col">
+            
+          </div>
+        </div>
+    </div>
+
+
+    <!--This div places the table in the only column on the row-->
+    <div class="container text-center">
+    <div class="row">
+        <div class="col">
+         
+            <!--The table is a responsive striped table with hover -->
+        <table class="table table-responsive  table-hover table-striped">
+            <thead>
+                <tr>
+                <th></th>
+                <th>Wild Caught Sockeye Salmon</th>
+                <th>Navy Beans</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <tr>
+                    <td>Energy</td>
+                    <td>130 kcal</td>
+                    <td>119 kcal</td>
+                </tr>
+                <tr>
+                    <td>Protein</td>
+                    <td>22.3 g</td>
+                    <td>6.57 g</td>
+                </tr>
+                <tr>
+                    <td>Iron</td>
+                    <td>0.4 mg</td>
+                    <td>1.6 mg</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        
+    </div>
+    </div>
+
+    <!--This div places the source credit on a long single row-->
+    <div class="container">
+        <div class="row">
+          
+            <p>Source: US Department of Agriculture. FoodData Central. (2025). Usda.gov. https://fdc.nal.usda.gov/
+
+            </p>
+            
+        </div>
+    </div>
+    <!--This is the footer logic-->
+
+    <footer>
+        <br><br><br><hr>
+        <p>
+            2025 by Nubila Levon
+        </p>
+    </footer>
+        
+        
+
+
+   
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
